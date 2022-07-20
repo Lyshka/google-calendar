@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import React, { useContext, useState } from "react";
 import GlobalContext from "../context/GlobalContext";
 
 const labelsClasses = [
@@ -82,7 +82,7 @@ export default function EventModal() {
             <input
               type="text"
               name="title"
-              placeholder="Загаловок"
+              placeholder="Add title"
               value={title}
               required
               className="pt-3 border-0 text-gray-600 text-xl font-semibold pb-2 w-full border-b-2 border-gray-200 focus:outline-none focus:ring-0 focus:border-blue-500"
@@ -98,7 +98,7 @@ export default function EventModal() {
             <input
               type="text"
               name="description"
-              placeholder="Описание"
+              placeholder="Add a description"
               value={description}
               required
               className="pt-3 border-0 text-gray-600 pb-2 w-full border-b-2 border-gray-200 focus:outline-none focus:ring-0 focus:border-blue-500"
@@ -130,7 +130,7 @@ export default function EventModal() {
             onClick={handleSubmit}
             className="bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded text-white"
           >
-            Сохранить
+            Save
           </button>
         </footer>
       </form>
