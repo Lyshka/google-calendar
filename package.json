@@ -42,5 +42,17 @@
     "autoprefixer": "^9",
     "postcss": "^7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
-  }
+  },
+  "main": "craco.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lyshka/google-calendar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lyshka/google-calendar/issues"
+  },
+  "homepage": "https://github.com/Lyshka/google-calendar#readme",
+  "description": ""
 }
