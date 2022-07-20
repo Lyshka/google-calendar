@@ -1,5 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
-import "./App.css";
+import { useState, useContext, useEffect } from "react";
 import { getMonth } from "./util";
 import CalendarHeader from "./components/CalendarHeader";
 import Sidebar from "./components/Sidebar";
@@ -15,7 +14,7 @@ function App() {
   }, [monthIndex]);
 
   return (
-    <React.Fragment>
+    <>
       {showEventModal && <EventModal />}
 
       <div className="h-screen flex flex-col">
@@ -25,7 +24,7 @@ function App() {
           <Month month={currenMonth} />
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 }
 
