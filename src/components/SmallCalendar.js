@@ -1,5 +1,5 @@
 import dayjs from "dayjs";
-import React, { useContext, useEffect, useState } from "react";
+import { Fragment, useContext, useEffect, useState } from "react";
 import GlobalContext from "../context/GlobalContext";
 import { getMonth } from "../util";
 
@@ -70,7 +70,7 @@ export default function SmallCalendar() {
           </span>
         ))}
         {currentMonth.map((row, i) => (
-          <React.Fragment key={i}>
+          <Fragment key={i}>
             {row.map((day, idx) => (
               <button
                 key={idx}
@@ -83,7 +83,7 @@ export default function SmallCalendar() {
                 <span className="text-sm">{day.format("D")}</span>
               </button>
             ))}
-          </React.Fragment>
+          </Fragment>
         ))}
       </div>
     </div>
